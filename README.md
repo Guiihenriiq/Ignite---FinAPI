@@ -1,4 +1,4 @@
-# **API - Sistema de Conta Bancária**
+# **API - Sistema de Conta Bancária💵**
 
 Este é um sistema de API RESTful para gerenciar contas bancárias de clientes. Ele permite realizar operações como criar contas, realizar depósitos, saques e consultar o extrato e o saldo.
 
@@ -27,10 +27,7 @@ A API oferece as seguintes funcionalidades:
 
 ### **Pré-requisitos**
 
-- **Node.js**: A versão recomendada do Node.js para rodar este projeto é a versão 16.x ou superior.<div>
- <img align="center" alt="Guii-Node" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
-<div/>
-
+- **Node.js**: A versão recomendada do Node.js para rodar este projeto é a versão 16.x ou superior.
 
 ### **Passos para Instalar e Rodar**
 
@@ -59,7 +56,7 @@ A API oferece as seguintes funcionalidades:
 
 Abaixo estão os principais end-points disponíveis na API:
 
-### **1. Criar Conta Bancária**
+### **1. Criar Conta Bancária👨‍💻**
 `POST /account`
 
 **Body**:
@@ -68,7 +65,77 @@ Abaixo estão os principais end-points disponíveis na API:
   "cpf": "12345678900",
   "name": "Nome do Cliente"
 }
+```
+### **2. Consultar Extrato da Conta🔎**
+`GET /statement`
 
+**Body**:
+```json
+{
+  "cpf": "12345678900"
+}
+```
+### **3. Realizar Depósito🛅**
+`POST /deposit`
 
+**Body**:
+```json
+{
+  "description": "Depósito inicial",
+  "amount": 100.00
+}
+```
+### **4. Realizar Saque💱**
+`POST /withdraw`
 
+**Body**:
+```json
+{
+  "amount": 50.00
+}
+```
+### **5. Consultar Extrato por Data🗓️**
+`GET /statement/date`
 
+**Body**:
+```json
+{
+  "date": "2023-04-04"
+}
+```
+### **6. Atualizar Informações da Conta♻️**
+`PUT /account`
+
+**Body**:
+```json
+{
+  "name": "Novo Nome do Cliente"
+}
+```
+### **7. Consultar Dados da Conta🔄️**
+`GET /account`
+
+**Body**:
+```json
+{
+  "cpf": "12345678900"
+}
+```
+### **8. Excluir Conta Bancária🗑️**
+`DELETE /account`
+
+**Body**:
+```json
+{
+  "cpf": "12345678900"
+}
+```
+### **9. Consultar Saldo🤑**
+`GET /balance`
+
+**Body**:
+```json
+{
+  "cpf": "12345678900"
+}
+```
