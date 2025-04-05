@@ -27,7 +27,10 @@ A API oferece as seguintes funcionalidades:
 
 ### **Pré-requisitos**
 
-- **Node.js**: A versão recomendada do Node.js para rodar este projeto é a versão 16.x ou superior.
+- **Node.js**: A versão recomendada do Node.js para rodar este projeto é a versão 16.x ou superior.<div>
+ <img align="center" alt="Guii-Node" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+<div/>
+
 
 ### **Passos para Instalar e Rodar**
 
@@ -65,3 +68,7 @@ Abaixo estão os principais end-points disponíveis na API:
   "cpf": "12345678900",
   "name": "Nome do Cliente"
 }
+
+
+
+
